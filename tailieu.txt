@@ -1,0 +1,42 @@
+  function custom_query_get_category_posts($category)
+      {
+        $args = array(
+          'category_name' => $category,
+          'posts_per_page' => -1, // Lấy tất cả các bài viết trong danh mục được truyền vào
+        );
+
+        $category_posts = get_posts($args);
+
+        // Xử lý kết quả
+        if (!empty($category_posts)) {
+          return $category_posts;
+        } else {
+          echo 'Không có bài viết nào trong danh mục "' . $category . '".';
+        }
+      }
+
+
+
+
+<section id="main-content">
+<?php
+	$category_name = 'News';
+	$category_posts = custom_query_get_category_posts($category_name);
+	foreach ($category_posts as $post) { ?>
+		<?= var_dump($post) ?>
+		<a href=<?= $post->guid ?>>
+			<h2><?= $post->post_title ?></h2>
+
+			<div>Ngày đăng:<?= $post_date = get_the_date('y/m/d', $post->ID) ?></div>
+			<?php
+			if (has_post_thumbnail($post->ID)) {
+				$thumbnail = get_the_post_thumbnail($post->ID);
+				echo $thumbnail;
+			}
+			?>
+
+
+			<div><?= $post->post_content ?></div>
+		</a>
+	<?php } ?>
+</section>
