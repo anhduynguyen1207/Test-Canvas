@@ -1,11 +1,12 @@
-.container {   
+.container {
     top: 0px;
     left: 0px;
     width: 1400px;
-    height: 76px;    
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     margin: auto 150px;
+
+    padding-bottom: 10rem;
 }
 
 .hearder {
@@ -108,4 +109,173 @@
 
 .fs-32 {
     font-size: 32px;
+}
+
+.content-black {
+    min-height: 1000px;
+    background: #000000 0% 0% no-repeat padding-box;
+    padding-bottom: 10rem;
+}
+
+
+
+
+.wrapper-content {
+    margin: auto 150px;
+}
+
+.content-424 {
+    padding-top: 5rem;
+    opacity: 1;
+    display: flex;
+    gap: 3px;
+}
+
+.content-research,
+.content-analysis {
+    width: 436px;
+    height: 700px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    z-index: 2;
+}
+
+.content-implementation {
+    width: 220px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    z-index: 2;
+}
+
+.img-background {
+    z-index: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(80%);
+}
+
+.container-research {
+    z-index: 2;
+    position: relative;
+}
+
+.position-content {
+    position: absolute;
+    top: 40;
+}
+
+.title-content {
+    padding: 26px 40px;
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+    background: #F7F7FB 0% 0% no-repeat padding-box;
+}
+
+.sub-title-research {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 2.3rem;
+}
+
+.sub-content-research {
+    font-size: 14px;
+    color: #000000;
+    width: 356px;
+    height: 42px;
+
+}
+
+.content-padding {
+    padding: 40px;
+}
+
+.judge {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-good,
+.container-bab {
+    width: 548px;
+}
+
+.title-good {
+    padding: 26px 40px;
+    background: #333333 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.good-content {
+    height: 375px;
+    padding: 30 40;
+    background: #444444 0% 0% no-repeat padding-box;
+
+}
+
+.good-sub-title {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.good-sub-content {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.point {
+    width: 131px;
+    padding: 10 0;
+    background: #FFF500 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.opinion-bab {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.title-bab {
+    padding: 26px 40px;
+    background: #F7F7FB 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bab-content {
+    height: 375px;
+    padding: 30 40;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.bab-sub-title {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.bab-sub-content {
+    font-size: 14px;
+    color: #000000;
+}
+
+.opinion-good {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.our-strengths-title {
+    color: #000000;
+    font-size: 90px;
 }
